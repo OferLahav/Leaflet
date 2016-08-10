@@ -342,7 +342,7 @@ L.Map = L.Evented.extend({
 		if (!offset.x && !offset.y) { return this; }
 
 		if (options.animate && options.pan) {
-			this.panBy(offset);
+			this.panBy(offset, options);
 
 		} else {
 			if (options.pan) {
